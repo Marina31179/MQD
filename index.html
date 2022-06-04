@@ -97,24 +97,24 @@
 <section class="trend">
     <h2 class="modern">сейчас в тренде</h2>
     <div class="trending">
-      <div class="tender">
-        <div class="garden">
-            <div class="bor">
+       <div class="tender">
+           <div class="garden">
+              <div class="bor">
                 <ul class="memory">
                     <li class="life"><a class="link" href="#">lifestyle</a></li>
                     <li class="life"><a class="link" href="#">interior</a></li>
                 </ul>
-                <p class="lider">сейчас в тренде: сад на подоконнике</p>
-            </div>
+                <p class="lider"><a class="lider__lider" href="#">сейчас в тренде: сад на подоконнике</a></p>
+              </div>
+           </div>
         </div>
-      </div>
       <div class="tender">
         <div class="cheeze">
             <div class="bor">
               <ul class="memory">
                 <li class="life"><a class="link" href="#">food</a></li>
               </ul>
-                <p class="lider">сыры на красивых картинках из интернета: какие они на вкус?</p>
+                <p class="lider"><a class="lider__lider" href="#">сыры на красивых картинках из интернета: какие они на вкус?</a></p>
             </div>
           </div>
       </div>
@@ -125,7 +125,7 @@
                 <li class="life"><a class="link" href="#">lifestyle</a></li>
                 <li class="life"><a class="link" href="#">travel</a></li>
               </ul>
-                <p class="lider">собираемся в первый поход в горы</p>
+                <p class="lider"><a class="lider__lider" href="#">собираемся в первый поход в горы</a></p>
             </div>
         </div>
       </div>
@@ -136,7 +136,7 @@
                 <li class="life"><a class="link" href="#">food</a></li>
                 <li class="life"><a class="link" href="#">health</a></li>
               </ul>
-                <p class="lider">сейчас в тренде: сколько витамина c в лимонах</p>
+                <p class="lider"><a class="lider__lider" href="#">сейчас в тренде: сколько витамина c в лимонах</a></p>
             </div>
         </div>
       </div>
@@ -314,22 +314,23 @@
             </article>
         </section>
 
-        <form class="search">
-            <label class="search-group">
+        <section class="message">
+          <div class="search">
+            <div class="search-group">
                 <input type="text" class="search-field" placeholder="Найти..." alt="поле поиска">
-            </label>
 
             <button type="submit" class="search-button"><span class="hidden">Поле ввода</span>
             </button>
-        </form>
+            </div>
+          </div>
 
-        <section class="message">
+
           <h3 class="new-posts">рассылка</h3>
             <form class="add">
               <div class="register">
-                <label class="email-group">
+                <div class="email-group">
                   <input type="email" class="search-email" placeholder="Ваш e-mail адрес"><span class="hidden">Введите Ваш электронный адрес</span>
-                </label>
+                </div>
 
               </div>
 
@@ -359,12 +360,12 @@
         <h3 class="new-posts">Темы</h3>
 
           <ul class="them">
-            <li><a href="#" class="mode">Красота<span class="note"><sup>12</sup></span></a></li>
-            <li><a href="#" class="mode">Здоровье<span class="note"><sup>4</sup></span></a></li>
-            <li><a href="#" class="mode">Образ жизни<span class="note"><sup>145</sup></span></a></li>
-            <li><a href="#" class="mode">Музыка<span class="note"><sup>28</sup></span></a></li>
-            <li><a href="#" class="mode">Спорт<span class="note"><sup>62</sup></span></a></li>
-            <li><a href="#" class="mode">Йога<span class="note"><sup>8</sup></span></a></li>
+            <li class="trust"><a href="#" class="mode">Красота</a><span class="note">12</span></li>
+            <li class="trust"><a href="#" class="mode">Здоровье</a><span class="note">4</span></li>
+            <li class="trust"><a href="#" class="mode">Образ жизни</a><span class="note">145</span></li>
+            <li class="trust"><a href="#" class="mode">Музыка</a><span class="note">28</span></li>
+            <li class="trust"><a href="#" class="mode">Спорт</a><span class="note">62</span></li>
+            <li class="trust"><a href="#" class="mode">Йога</a><span class="note">8</span></li>
           </ul>
       </section>
     </aside>
@@ -375,7 +376,18 @@
   <h2 class="modern">наши изделия</h2>
     <div class="shop_shop">
         <div class="frame">
-            <img class="fly" src="IMAGES/shop-item-desk1.jpg" alt="фото">
+          <picture>
+              <source
+              media="(min-width=1200px)"
+              srcset="IMAGES/shop-item-desk1.jpg">
+              <source
+              media="(min-width: 641px) and (max-width: 1199px)"
+              srcset="IMAGES/shop-item-tablet1.jpg">
+              <source
+              media="(max-width: 640px)"
+              srcset="IMAGES/shop-item-mobile1.jpg">
+              <img src="IMAGES/shop-item-desk1.jpg" alt="фото">
+          </picture>
             <div class="sofa">
                 <h3 class="down">подушки на диван</h3>
                 <p class="piece">Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="into">здесь</a>.
@@ -392,7 +404,18 @@
             </div>
         </div>
         <div class="frame">
-            <img class="fly" src="IMAGES/shop-item-desk2.jpg" alt="фото" >
+            <picture>
+                <source
+                        media="(min-width=1200px)"
+                        srcset="IMAGES/shop-item-desk2.jpg">
+                <source
+                        media="(min-width: 641px) and (max-width: 1199px)"
+                        srcset="IMAGES/shop-item-tablet2.jpg">
+                <source
+                        media="(max-width: 640px)"
+                        srcset="IMAGES/shop-item-mobile2.jpg">
+                <img src="IMAGES/shop-item-desk2.jpg" alt="фото">
+            </picture>
             <div class="sofa">
                 <h3 class="down">кукла "зайчик"</h3>
                 <p class="piece">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a href="#" class="into">весенняя
@@ -409,7 +432,19 @@
             </div>
         </div>
         <div class="frame">
-            <img class="fly" src="IMAGES/shop-item-desk3.jpg" alt="фото">
+            <picture>
+                <source
+                        media="(min-width=1200px)"
+                        srcset="IMAGES/shop-item-desk3.jpg">
+                <source
+                        media="(min-width: 641px) and (max-width: 1199px)"
+                        srcset="IMAGES/shop-item-tablet3.jpg">
+                <source
+                        media="(max-width: 640px)"
+                        srcset="IMAGES/shop-item-mobile3.jpg">
+                <img src="IMAGES/shop-item-desk3.jpg" alt="фото">
+            </picture>
+
             <div class="sofa">
                 <h3 class="down">шестиугольная рамка</h3>
                 <p class="piece">Необычная рамка для украшения дома из видео <a href="#" class="into">"Как сделать
