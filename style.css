@@ -86,12 +86,11 @@
 .title_title:after {
     display: flex;
     padding: 0;
+    margin: 8px auto 20px;
     content: "";
     width: 66px;
     height: 3px;
     background-color: #b59f5b;
-    margin-top: 8px;
-    margin-bottom: 20px;
 }
 .what {
     display: flex;
@@ -356,6 +355,11 @@
     box-sizing: border-box;
     position: relative;
     justify-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
 }
 .tender:before {
     content: "";
@@ -378,7 +382,7 @@
     right: 0;
     bottom: 0;
 }
-.garden,.cheeze,.hall,.lemon {
+/*.garden,.cheeze,.hall,.lemon {
     display: flex;
     box-sizing: border-box;
     background-repeat: no-repeat;
@@ -386,7 +390,7 @@
     width: 100%;
     height: 100%;
     align-items: flex-end;
-}
+}*/
 
 .garden {
     background-image: url(IMAGES/trend1.jpg);
@@ -735,16 +739,15 @@
     background-color: #b59f5b;
 }
 .search-field {
-    line-height: 40px;
     font-size: 13px;
     border: none;
     outline: none;
     background-color: #f4f7f6;
     height: 48px;
-    width: 100%;
+    width: calc(100% - 48px);
     padding-left: 15px;
     padding-right: 15px;
-
+    box-sizing: border-box;
 }
 .register {
     margin-top: 24px;
