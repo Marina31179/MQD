@@ -337,6 +337,7 @@
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
     text-transform: uppercase;
     font-weight: 700;
@@ -348,17 +349,16 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 .tender {
     display: flex;
     box-sizing: border-box;
     position: relative;
-    width: 100%;
     height: 100%;
     align-items: flex-end;
 }
-/*.garden,.cheeze,.hall,.lemon:before {
+.garden:before,.cheeze:before,.hall:before,.lemon:before {
     content: "";
     position: absolute;
     background-color: #eff6f1;
@@ -368,7 +368,7 @@
     left: 0;
     bottom: 0;
 }
-.garden,.cheeze,.hall,.lemon:after {
+.garden:after,.cheeze:after,.hall:after,.lemon:after {
     content: "";
     position: absolute;
     background-color: rgba(0, 0, 0,0.4);
@@ -377,14 +377,13 @@
     right: 0;
     left: 0;
     bottom: 0;
-}*/
+}
 .garden,.cheeze,.hall,.lemon {
     display: flex;
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: flex-end;
-    width: 25%;
 }
 
 .garden {
@@ -704,13 +703,13 @@
     display: flex;
     box-sizing: border-box;
     margin-bottom: 55px;
-
+    width: 100%;
 }
 .search-group {
     display: flex;
     box-sizing: border-box;
-    width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+
 }
 .hidden {
     width: 1px;
@@ -746,6 +745,8 @@
 }
 .register {
     margin-top: 24px;
+    width: 100%;
+    box-sizing: border-box;
 }
 .search-group:hover,
 .search-button:hover {
@@ -772,6 +773,7 @@
     -moz-appearance: none;
     appearance: none;*/
     width: 100%;
+    box-sizing: border-box;
 }
 .search-email:hover {
     background-color: #f4f7f6;
@@ -780,7 +782,7 @@
 .sub-name {
     background-color: #b59f5b;
     height: 48px;
-    width: 273px;
+    width: 100%;
     margin-top: 18px;
 }
 .name {
@@ -841,6 +843,7 @@
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
 
 }
